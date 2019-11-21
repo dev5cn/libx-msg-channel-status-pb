@@ -19,26 +19,11 @@
 #include "third_party/protobuf/version.h"
 #endif
 // @@protoc_insertion_point(includes)
-class XmsgChannelStatusCfgPb_KafkaProdEntry_DoNotUseDefaultTypeInternal {
- public:
-  ::google::protobuf::internal::ExplicitlyConstructed<XmsgChannelStatusCfgPb_KafkaProdEntry_DoNotUse>
-      _instance;
-} _XmsgChannelStatusCfgPb_KafkaProdEntry_DoNotUse_default_instance_;
 class XmsgChannelStatusCfgPbDefaultTypeInternal {
  public:
   ::google::protobuf::internal::ExplicitlyConstructed<XmsgChannelStatusCfgPb>
       _instance;
 } _XmsgChannelStatusCfgPb_default_instance_;
-class XmsgChannelStatusCfgMongodbDefaultTypeInternal {
- public:
-  ::google::protobuf::internal::ExplicitlyConstructed<XmsgChannelStatusCfgMongodb>
-      _instance;
-} _XmsgChannelStatusCfgMongodb_default_instance_;
-class XmsgChannelStatusCfgMysqlDefaultTypeInternal {
- public:
-  ::google::protobuf::internal::ExplicitlyConstructed<XmsgChannelStatusCfgMysql>
-      _instance;
-} _XmsgChannelStatusCfgMysql_default_instance_;
 class XmsgChannelStatusCfgLogDefaultTypeInternal {
  public:
   ::google::protobuf::internal::ExplicitlyConstructed<XmsgChannelStatusCfgLog>
@@ -65,26 +50,6 @@ class XmsgChannelStatusCfgMiscDefaultTypeInternal {
       _instance;
 } _XmsgChannelStatusCfgMisc_default_instance_;
 namespace protobuf_cfg_2dx_2dmsg_2dchannel_2dstatus_2eproto {
-void InitDefaultsXmsgChannelStatusCfgPb_KafkaProdEntry_DoNotUseImpl() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
-#else
-  ::google::protobuf::internal::InitProtobufDefaults();
-#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  {
-    void* ptr = &::_XmsgChannelStatusCfgPb_KafkaProdEntry_DoNotUse_default_instance_;
-    new (ptr) ::XmsgChannelStatusCfgPb_KafkaProdEntry_DoNotUse();
-  }
-  ::XmsgChannelStatusCfgPb_KafkaProdEntry_DoNotUse::InitAsDefaultInstance();
-}
-
-void InitDefaultsXmsgChannelStatusCfgPb_KafkaProdEntry_DoNotUse() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsXmsgChannelStatusCfgPb_KafkaProdEntry_DoNotUseImpl);
-}
-
 void InitDefaultsXmsgChannelStatusCfgPbImpl() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
@@ -93,14 +58,11 @@ void InitDefaultsXmsgChannelStatusCfgPbImpl() {
 #else
   ::google::protobuf::internal::InitProtobufDefaults();
 #endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  protobuf_cfg_2dx_2dmsg_2dchannel_2dstatus_2eproto::InitDefaultsXmsgChannelStatusCfgMongodb();
-  protobuf_cfg_2dx_2dmsg_2dchannel_2dstatus_2eproto::InitDefaultsXmsgChannelStatusCfgMysql();
   protobuf_cfg_2dx_2dmsg_2dchannel_2dstatus_2eproto::InitDefaultsXmsgChannelStatusCfgLog();
   protobuf_cfg_2dx_2dmsg_2dchannel_2dstatus_2eproto::InitDefaultsXmsgChannelStatusCfgXscTcpServer();
   protobuf_cfg_2dx_2dmsg_2dchannel_2dstatus_2eproto::InitDefaultsXmsgChannelStatusCfgXmsgNeH2nAddr();
   protobuf_cfg_2dx_2dmsg_2dchannel_2dstatus_2eproto::InitDefaultsXmsgChannelStatusCfgXmsgNeN2hAddr();
   protobuf_cfg_2dx_2dmsg_2dchannel_2dstatus_2eproto::InitDefaultsXmsgChannelStatusCfgMisc();
-  protobuf_cfg_2dx_2dmsg_2dchannel_2dstatus_2eproto::InitDefaultsXmsgChannelStatusCfgPb_KafkaProdEntry_DoNotUse();
   {
     void* ptr = &::_XmsgChannelStatusCfgPb_default_instance_;
     new (ptr) ::XmsgChannelStatusCfgPb();
@@ -112,48 +74,6 @@ void InitDefaultsXmsgChannelStatusCfgPbImpl() {
 void InitDefaultsXmsgChannelStatusCfgPb() {
   static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
   ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsXmsgChannelStatusCfgPbImpl);
-}
-
-void InitDefaultsXmsgChannelStatusCfgMongodbImpl() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
-#else
-  ::google::protobuf::internal::InitProtobufDefaults();
-#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  {
-    void* ptr = &::_XmsgChannelStatusCfgMongodb_default_instance_;
-    new (ptr) ::XmsgChannelStatusCfgMongodb();
-    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::XmsgChannelStatusCfgMongodb::InitAsDefaultInstance();
-}
-
-void InitDefaultsXmsgChannelStatusCfgMongodb() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsXmsgChannelStatusCfgMongodbImpl);
-}
-
-void InitDefaultsXmsgChannelStatusCfgMysqlImpl() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
-#else
-  ::google::protobuf::internal::InitProtobufDefaults();
-#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  {
-    void* ptr = &::_XmsgChannelStatusCfgMysql_default_instance_;
-    new (ptr) ::XmsgChannelStatusCfgMysql();
-    ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::XmsgChannelStatusCfgMysql::InitAsDefaultInstance();
-}
-
-void InitDefaultsXmsgChannelStatusCfgMysql() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsXmsgChannelStatusCfgMysqlImpl);
 }
 
 void InitDefaultsXmsgChannelStatusCfgLogImpl() {
@@ -261,18 +181,9 @@ void InitDefaultsXmsgChannelStatusCfgMisc() {
   ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsXmsgChannelStatusCfgMiscImpl);
 }
 
-::google::protobuf::Metadata file_level_metadata[9];
+::google::protobuf::Metadata file_level_metadata[6];
 
 const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::XmsgChannelStatusCfgPb_KafkaProdEntry_DoNotUse, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::XmsgChannelStatusCfgPb_KafkaProdEntry_DoNotUse, _internal_metadata_),
-  ~0u,  // no _extensions_
-  ~0u,  // no _oneof_case_
-  ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::XmsgChannelStatusCfgPb_KafkaProdEntry_DoNotUse, key_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::XmsgChannelStatusCfgPb_KafkaProdEntry_DoNotUse, value_),
-  0,
-  1,
   ~0u,  // no _has_bits_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::XmsgChannelStatusCfgPb, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -280,33 +191,11 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   ~0u,  // no _weak_field_map_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::XmsgChannelStatusCfgPb, cgt_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::XmsgChannelStatusCfgPb, cfgtype_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::XmsgChannelStatusCfgPb, mongodb_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::XmsgChannelStatusCfgPb, mysql_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::XmsgChannelStatusCfgPb, log_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::XmsgChannelStatusCfgPb, xsctcpcfg_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::XmsgChannelStatusCfgPb, h2n_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::XmsgChannelStatusCfgPb, n2h_),
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::XmsgChannelStatusCfgPb, misc_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::XmsgChannelStatusCfgPb, kafkaprod_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::XmsgChannelStatusCfgPb, gts_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::XmsgChannelStatusCfgPb, uts_),
-  ~0u,  // no _has_bits_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::XmsgChannelStatusCfgMongodb, _internal_metadata_),
-  ~0u,  // no _extensions_
-  ~0u,  // no _oneof_case_
-  ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::XmsgChannelStatusCfgMongodb, uri_),
-  ~0u,  // no _has_bits_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::XmsgChannelStatusCfgMysql, _internal_metadata_),
-  ~0u,  // no _extensions_
-  ~0u,  // no _oneof_case_
-  ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::XmsgChannelStatusCfgMysql, host_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::XmsgChannelStatusCfgMysql, port_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::XmsgChannelStatusCfgMysql, db_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::XmsgChannelStatusCfgMysql, usr_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::XmsgChannelStatusCfgMysql, password_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::XmsgChannelStatusCfgMysql, poolsize_),
   ~0u,  // no _has_bits_
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::XmsgChannelStatusCfgLog, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -361,22 +250,16 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::XmsgChannelStatusCfgMisc, ghlr_),
 };
 static const ::google::protobuf::internal::MigrationSchema schemas[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, 7, sizeof(::XmsgChannelStatusCfgPb_KafkaProdEntry_DoNotUse)},
-  { 9, -1, sizeof(::XmsgChannelStatusCfgPb)},
-  { 26, -1, sizeof(::XmsgChannelStatusCfgMongodb)},
-  { 32, -1, sizeof(::XmsgChannelStatusCfgMysql)},
-  { 43, -1, sizeof(::XmsgChannelStatusCfgLog)},
-  { 50, -1, sizeof(::XmsgChannelStatusCfgXscTcpServer)},
-  { 69, -1, sizeof(::XmsgChannelStatusCfgXmsgNeH2nAddr)},
-  { 79, -1, sizeof(::XmsgChannelStatusCfgXmsgNeN2hAddr)},
-  { 88, -1, sizeof(::XmsgChannelStatusCfgMisc)},
+  { 0, -1, sizeof(::XmsgChannelStatusCfgPb)},
+  { 12, -1, sizeof(::XmsgChannelStatusCfgLog)},
+  { 19, -1, sizeof(::XmsgChannelStatusCfgXscTcpServer)},
+  { 38, -1, sizeof(::XmsgChannelStatusCfgXmsgNeH2nAddr)},
+  { 48, -1, sizeof(::XmsgChannelStatusCfgXmsgNeN2hAddr)},
+  { 57, -1, sizeof(::XmsgChannelStatusCfgMisc)},
 };
 
 static ::google::protobuf::Message const * const file_default_instances[] = {
-  reinterpret_cast<const ::google::protobuf::Message*>(&::_XmsgChannelStatusCfgPb_KafkaProdEntry_DoNotUse_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::_XmsgChannelStatusCfgPb_default_instance_),
-  reinterpret_cast<const ::google::protobuf::Message*>(&::_XmsgChannelStatusCfgMongodb_default_instance_),
-  reinterpret_cast<const ::google::protobuf::Message*>(&::_XmsgChannelStatusCfgMysql_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::_XmsgChannelStatusCfgLog_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::_XmsgChannelStatusCfgXscTcpServer_default_instance_),
   reinterpret_cast<const ::google::protobuf::Message*>(&::_XmsgChannelStatusCfgXmsgNeH2nAddr_default_instance_),
@@ -400,49 +283,39 @@ void protobuf_AssignDescriptorsOnce() {
 void protobuf_RegisterTypes(const ::std::string&) GOOGLE_PROTOBUF_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 9);
+  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 6);
 }
 
 void AddDescriptorsImpl() {
   InitDefaults();
   static const char descriptor[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
-      "\n\036cfg-x-msg-channel-status.proto\"\377\003\n\026Xms"
+      "\n\036cfg-x-msg-channel-status.proto\"\236\002\n\026Xms"
       "gChannelStatusCfgPb\022\013\n\003cgt\030\001 \001(\t\022\017\n\007cfgT"
-      "ype\030\002 \001(\t\022-\n\007mongodb\030\003 \001(\0132\034.XmsgChannel"
-      "StatusCfgMongodb\022)\n\005mysql\030\004 \001(\0132\032.XmsgCh"
-      "annelStatusCfgMysql\022%\n\003log\030\005 \001(\0132\030.XmsgC"
-      "hannelStatusCfgLog\0224\n\txscTcpCfg\030\006 \001(\0132!."
-      "XmsgChannelStatusCfgXscTcpServer\022/\n\003h2n\030"
-      "\007 \003(\0132\".XmsgChannelStatusCfgXmsgNeH2nAdd"
-      "r\022/\n\003n2h\030\010 \003(\0132\".XmsgChannelStatusCfgXms"
-      "gNeN2hAddr\022\'\n\004misc\030\t \001(\0132\031.XmsgChannelSt"
-      "atusCfgMisc\0229\n\tkafkaProd\030\014 \003(\0132&.XmsgCha"
-      "nnelStatusCfgPb.KafkaProdEntry\022\013\n\003gts\030\n "
-      "\001(\004\022\013\n\003uts\030\013 \001(\004\0320\n\016KafkaProdEntry\022\013\n\003ke"
-      "y\030\001 \001(\t\022\r\n\005value\030\002 \001(\t:\0028\001\"*\n\033XmsgChanne"
-      "lStatusCfgMongodb\022\013\n\003uri\030\001 \001(\t\"t\n\031XmsgCh"
-      "annelStatusCfgMysql\022\014\n\004host\030\001 \001(\t\022\014\n\004por"
-      "t\030\002 \001(\r\022\n\n\002db\030\003 \001(\t\022\013\n\003usr\030\004 \001(\t\022\020\n\010pass"
-      "word\030\005 \001(\t\022\020\n\010poolSize\030\006 \001(\r\"8\n\027XmsgChan"
-      "nelStatusCfgLog\022\r\n\005level\030\001 \001(\t\022\016\n\006output"
-      "\030\002 \001(\t\"\257\002\n XmsgChannelStatusCfgXscTcpSer"
-      "ver\022\014\n\004addr\030\001 \001(\t\022\016\n\006worker\030\002 \001(\r\022\021\n\tpee"
-      "rLimit\030\003 \001(\r\022\017\n\007peerMtu\030\004 \001(\r\022\022\n\npeerRcv"
-      "Buf\030\005 \001(\r\022\022\n\npeerSndBuf\030\006 \001(\r\022\021\n\tlazyClo"
-      "se\030\007 \001(\r\022\017\n\007tracing\030\010 \001(\010\022\021\n\theartbeat\030\t"
-      " \001(\r\022\021\n\tn2hZombie\030\n \001(\r\022\027\n\017n2hTransTimeo"
-      "ut\030\013 \001(\r\022\022\n\nn2hTracing\030\014 \001(\010\022\021\n\th2nReCon"
-      "n\030\r \001(\r\022\027\n\017h2nTransTimeout\030\016 \001(\r\"k\n!Xmsg"
-      "ChannelStatusCfgXmsgNeH2nAddr\022\013\n\003neg\030\001 \001"
-      "(\t\022\014\n\004addr\030\002 \001(\t\022\013\n\003pwd\030\003 \001(\t\022\013\n\003alg\030\004 \001"
-      "(\t\022\021\n\tredundant\030\005 \001(\r\"X\n!XmsgChannelStat"
-      "usCfgXmsgNeN2hAddr\022\013\n\003neg\030\001 \001(\t\022\013\n\003cgt\030\002"
-      " \001(\t\022\013\n\003pwd\030\003 \001(\t\022\014\n\004addr\030\004 \001(\t\"6\n\030XmsgC"
-      "hannelStatusCfgMisc\022\014\n\004uhlr\030\001 \001(\t\022\014\n\004ghl"
-      "r\030\002 \001(\tb\006proto3"
+      "ype\030\002 \001(\t\022%\n\003log\030\005 \001(\0132\030.XmsgChannelStat"
+      "usCfgLog\0224\n\txscTcpCfg\030\006 \001(\0132!.XmsgChanne"
+      "lStatusCfgXscTcpServer\022/\n\003h2n\030\007 \003(\0132\".Xm"
+      "sgChannelStatusCfgXmsgNeH2nAddr\022/\n\003n2h\030\010"
+      " \003(\0132\".XmsgChannelStatusCfgXmsgNeN2hAddr"
+      "\022\'\n\004misc\030\t \001(\0132\031.XmsgChannelStatusCfgMis"
+      "c\"8\n\027XmsgChannelStatusCfgLog\022\r\n\005level\030\001 "
+      "\001(\t\022\016\n\006output\030\002 \001(\t\"\257\002\n XmsgChannelStatu"
+      "sCfgXscTcpServer\022\014\n\004addr\030\001 \001(\t\022\016\n\006worker"
+      "\030\002 \001(\r\022\021\n\tpeerLimit\030\003 \001(\r\022\017\n\007peerMtu\030\004 \001"
+      "(\r\022\022\n\npeerRcvBuf\030\005 \001(\r\022\022\n\npeerSndBuf\030\006 \001"
+      "(\r\022\021\n\tlazyClose\030\007 \001(\r\022\017\n\007tracing\030\010 \001(\010\022\021"
+      "\n\theartbeat\030\t \001(\r\022\021\n\tn2hZombie\030\n \001(\r\022\027\n\017"
+      "n2hTransTimeout\030\013 \001(\r\022\022\n\nn2hTracing\030\014 \001("
+      "\010\022\021\n\th2nReConn\030\r \001(\r\022\027\n\017h2nTransTimeout\030"
+      "\016 \001(\r\"k\n!XmsgChannelStatusCfgXmsgNeH2nAd"
+      "dr\022\013\n\003neg\030\001 \001(\t\022\014\n\004addr\030\002 \001(\t\022\013\n\003pwd\030\003 \001"
+      "(\t\022\013\n\003alg\030\004 \001(\t\022\021\n\tredundant\030\005 \001(\r\"X\n!Xm"
+      "sgChannelStatusCfgXmsgNeN2hAddr\022\013\n\003neg\030\001"
+      " \001(\t\022\013\n\003cgt\030\002 \001(\t\022\013\n\003pwd\030\003 \001(\t\022\014\n\004addr\030\004"
+      " \001(\t\"6\n\030XmsgChannelStatusCfgMisc\022\014\n\004uhlr"
+      "\030\001 \001(\t\022\014\n\004ghlr\030\002 \001(\tb\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 1335);
+      descriptor, 948);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "cfg-x-msg-channel-status.proto", &protobuf_RegisterTypes);
 }
@@ -461,28 +334,7 @@ struct StaticDescriptorInitializer {
 
 // ===================================================================
 
-XmsgChannelStatusCfgPb_KafkaProdEntry_DoNotUse::XmsgChannelStatusCfgPb_KafkaProdEntry_DoNotUse() {}
-XmsgChannelStatusCfgPb_KafkaProdEntry_DoNotUse::XmsgChannelStatusCfgPb_KafkaProdEntry_DoNotUse(::google::protobuf::Arena* arena) : SuperType(arena) {}
-void XmsgChannelStatusCfgPb_KafkaProdEntry_DoNotUse::MergeFrom(const XmsgChannelStatusCfgPb_KafkaProdEntry_DoNotUse& other) {
-  MergeFromInternal(other);
-}
-::google::protobuf::Metadata XmsgChannelStatusCfgPb_KafkaProdEntry_DoNotUse::GetMetadata() const {
-  ::protobuf_cfg_2dx_2dmsg_2dchannel_2dstatus_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_cfg_2dx_2dmsg_2dchannel_2dstatus_2eproto::file_level_metadata[0];
-}
-void XmsgChannelStatusCfgPb_KafkaProdEntry_DoNotUse::MergeFrom(
-    const ::google::protobuf::Message& other) {
-  ::google::protobuf::Message::MergeFrom(other);
-}
-
-
-// ===================================================================
-
 void XmsgChannelStatusCfgPb::InitAsDefaultInstance() {
-  ::_XmsgChannelStatusCfgPb_default_instance_._instance.get_mutable()->mongodb_ = const_cast< ::XmsgChannelStatusCfgMongodb*>(
-      ::XmsgChannelStatusCfgMongodb::internal_default_instance());
-  ::_XmsgChannelStatusCfgPb_default_instance_._instance.get_mutable()->mysql_ = const_cast< ::XmsgChannelStatusCfgMysql*>(
-      ::XmsgChannelStatusCfgMysql::internal_default_instance());
   ::_XmsgChannelStatusCfgPb_default_instance_._instance.get_mutable()->log_ = const_cast< ::XmsgChannelStatusCfgLog*>(
       ::XmsgChannelStatusCfgLog::internal_default_instance());
   ::_XmsgChannelStatusCfgPb_default_instance_._instance.get_mutable()->xsctcpcfg_ = const_cast< ::XmsgChannelStatusCfgXscTcpServer*>(
@@ -493,16 +345,11 @@ void XmsgChannelStatusCfgPb::InitAsDefaultInstance() {
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int XmsgChannelStatusCfgPb::kCgtFieldNumber;
 const int XmsgChannelStatusCfgPb::kCfgTypeFieldNumber;
-const int XmsgChannelStatusCfgPb::kMongodbFieldNumber;
-const int XmsgChannelStatusCfgPb::kMysqlFieldNumber;
 const int XmsgChannelStatusCfgPb::kLogFieldNumber;
 const int XmsgChannelStatusCfgPb::kXscTcpCfgFieldNumber;
 const int XmsgChannelStatusCfgPb::kH2NFieldNumber;
 const int XmsgChannelStatusCfgPb::kN2HFieldNumber;
 const int XmsgChannelStatusCfgPb::kMiscFieldNumber;
-const int XmsgChannelStatusCfgPb::kKafkaProdFieldNumber;
-const int XmsgChannelStatusCfgPb::kGtsFieldNumber;
-const int XmsgChannelStatusCfgPb::kUtsFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 XmsgChannelStatusCfgPb::XmsgChannelStatusCfgPb()
@@ -520,7 +367,6 @@ XmsgChannelStatusCfgPb::XmsgChannelStatusCfgPb(const XmsgChannelStatusCfgPb& fro
       n2h_(from.n2h_),
       _cached_size_(0) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
-  kafkaprod_.MergeFrom(from.kafkaprod_);
   cgt_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   if (from.cgt().size() > 0) {
     cgt_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.cgt_);
@@ -528,16 +374,6 @@ XmsgChannelStatusCfgPb::XmsgChannelStatusCfgPb(const XmsgChannelStatusCfgPb& fro
   cfgtype_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   if (from.cfgtype().size() > 0) {
     cfgtype_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.cfgtype_);
-  }
-  if (from.has_mongodb()) {
-    mongodb_ = new ::XmsgChannelStatusCfgMongodb(*from.mongodb_);
-  } else {
-    mongodb_ = NULL;
-  }
-  if (from.has_mysql()) {
-    mysql_ = new ::XmsgChannelStatusCfgMysql(*from.mysql_);
-  } else {
-    mysql_ = NULL;
   }
   if (from.has_log()) {
     log_ = new ::XmsgChannelStatusCfgLog(*from.log_);
@@ -554,18 +390,15 @@ XmsgChannelStatusCfgPb::XmsgChannelStatusCfgPb(const XmsgChannelStatusCfgPb& fro
   } else {
     misc_ = NULL;
   }
-  ::memcpy(&gts_, &from.gts_,
-    static_cast<size_t>(reinterpret_cast<char*>(&uts_) -
-    reinterpret_cast<char*>(&gts_)) + sizeof(uts_));
   // @@protoc_insertion_point(copy_constructor:XmsgChannelStatusCfgPb)
 }
 
 void XmsgChannelStatusCfgPb::SharedCtor() {
   cgt_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   cfgtype_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  ::memset(&mongodb_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&uts_) -
-      reinterpret_cast<char*>(&mongodb_)) + sizeof(uts_));
+  ::memset(&log_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&misc_) -
+      reinterpret_cast<char*>(&log_)) + sizeof(misc_));
   _cached_size_ = 0;
 }
 
@@ -577,8 +410,6 @@ XmsgChannelStatusCfgPb::~XmsgChannelStatusCfgPb() {
 void XmsgChannelStatusCfgPb::SharedDtor() {
   cgt_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   cfgtype_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != internal_default_instance()) delete mongodb_;
-  if (this != internal_default_instance()) delete mysql_;
   if (this != internal_default_instance()) delete log_;
   if (this != internal_default_instance()) delete xsctcpcfg_;
   if (this != internal_default_instance()) delete misc_;
@@ -615,17 +446,8 @@ void XmsgChannelStatusCfgPb::Clear() {
 
   h2n_.Clear();
   n2h_.Clear();
-  kafkaprod_.Clear();
   cgt_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   cfgtype_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (GetArenaNoVirtual() == NULL && mongodb_ != NULL) {
-    delete mongodb_;
-  }
-  mongodb_ = NULL;
-  if (GetArenaNoVirtual() == NULL && mysql_ != NULL) {
-    delete mysql_;
-  }
-  mysql_ = NULL;
   if (GetArenaNoVirtual() == NULL && log_ != NULL) {
     delete log_;
   }
@@ -638,9 +460,6 @@ void XmsgChannelStatusCfgPb::Clear() {
     delete misc_;
   }
   misc_ = NULL;
-  ::memset(&gts_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&uts_) -
-      reinterpret_cast<char*>(&gts_)) + sizeof(uts_));
   _internal_metadata_.Clear();
 }
 
@@ -680,30 +499,6 @@ bool XmsgChannelStatusCfgPb::MergePartialFromCodedStream(
             this->cfgtype().data(), static_cast<int>(this->cfgtype().length()),
             ::google::protobuf::internal::WireFormatLite::PARSE,
             "XmsgChannelStatusCfgPb.cfgType"));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // .XmsgChannelStatusCfgMongodb mongodb = 3;
-      case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
-               input, mutable_mongodb()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // .XmsgChannelStatusCfgMysql mysql = 4;
-      case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(34u /* 34 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
-               input, mutable_mysql()));
         } else {
           goto handle_unusual;
         }
@@ -768,61 +563,6 @@ bool XmsgChannelStatusCfgPb::MergePartialFromCodedStream(
         break;
       }
 
-      // uint64 gts = 10;
-      case 10: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(80u /* 80 & 0xFF */)) {
-
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
-                 input, &gts_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // uint64 uts = 11;
-      case 11: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(88u /* 88 & 0xFF */)) {
-
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
-                 input, &uts_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // map<string, string> kafkaProd = 12;
-      case 12: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(98u /* 98 & 0xFF */)) {
-          XmsgChannelStatusCfgPb_KafkaProdEntry_DoNotUse::Parser< ::google::protobuf::internal::MapField<
-              XmsgChannelStatusCfgPb_KafkaProdEntry_DoNotUse,
-              ::std::string, ::std::string,
-              ::google::protobuf::internal::WireFormatLite::TYPE_STRING,
-              ::google::protobuf::internal::WireFormatLite::TYPE_STRING,
-              0 >,
-            ::google::protobuf::Map< ::std::string, ::std::string > > parser(&kafkaprod_);
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
-              input, &parser));
-          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-            parser.key().data(), static_cast<int>(parser.key().length()),
-            ::google::protobuf::internal::WireFormatLite::PARSE,
-            "XmsgChannelStatusCfgPb.KafkaProdEntry.key"));
-          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-            parser.value().data(), static_cast<int>(parser.value().length()),
-            ::google::protobuf::internal::WireFormatLite::PARSE,
-            "XmsgChannelStatusCfgPb.KafkaProdEntry.value"));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
       default: {
       handle_unusual:
         if (tag == 0) {
@@ -869,18 +609,6 @@ void XmsgChannelStatusCfgPb::SerializeWithCachedSizes(
       2, this->cfgtype(), output);
   }
 
-  // .XmsgChannelStatusCfgMongodb mongodb = 3;
-  if (this->has_mongodb()) {
-    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      3, *this->mongodb_, output);
-  }
-
-  // .XmsgChannelStatusCfgMysql mysql = 4;
-  if (this->has_mysql()) {
-    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      4, *this->mysql_, output);
-  }
-
   // .XmsgChannelStatusCfgLog log = 5;
   if (this->has_log()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
@@ -911,69 +639,6 @@ void XmsgChannelStatusCfgPb::SerializeWithCachedSizes(
   if (this->has_misc()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       9, *this->misc_, output);
-  }
-
-  // uint64 gts = 10;
-  if (this->gts() != 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteUInt64(10, this->gts(), output);
-  }
-
-  // uint64 uts = 11;
-  if (this->uts() != 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteUInt64(11, this->uts(), output);
-  }
-
-  // map<string, string> kafkaProd = 12;
-  if (!this->kafkaprod().empty()) {
-    typedef ::google::protobuf::Map< ::std::string, ::std::string >::const_pointer
-        ConstPtr;
-    typedef ConstPtr SortItem;
-    typedef ::google::protobuf::internal::CompareByDerefFirst<SortItem> Less;
-    struct Utf8Check {
-      static void Check(ConstPtr p) {
-        ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-          p->first.data(), static_cast<int>(p->first.length()),
-          ::google::protobuf::internal::WireFormatLite::SERIALIZE,
-          "XmsgChannelStatusCfgPb.KafkaProdEntry.key");
-        ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-          p->second.data(), static_cast<int>(p->second.length()),
-          ::google::protobuf::internal::WireFormatLite::SERIALIZE,
-          "XmsgChannelStatusCfgPb.KafkaProdEntry.value");
-      }
-    };
-
-    if (output->IsSerializationDeterministic() &&
-        this->kafkaprod().size() > 1) {
-      ::google::protobuf::scoped_array<SortItem> items(
-          new SortItem[this->kafkaprod().size()]);
-      typedef ::google::protobuf::Map< ::std::string, ::std::string >::size_type size_type;
-      size_type n = 0;
-      for (::google::protobuf::Map< ::std::string, ::std::string >::const_iterator
-          it = this->kafkaprod().begin();
-          it != this->kafkaprod().end(); ++it, ++n) {
-        items[static_cast<ptrdiff_t>(n)] = SortItem(&*it);
-      }
-      ::std::sort(&items[0], &items[static_cast<ptrdiff_t>(n)], Less());
-      ::google::protobuf::scoped_ptr<XmsgChannelStatusCfgPb_KafkaProdEntry_DoNotUse> entry;
-      for (size_type i = 0; i < n; i++) {
-        entry.reset(kafkaprod_.NewEntryWrapper(
-            items[static_cast<ptrdiff_t>(i)]->first, items[static_cast<ptrdiff_t>(i)]->second));
-        ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-            12, *entry, output);
-        Utf8Check::Check(items[static_cast<ptrdiff_t>(i)]);
-      }
-    } else {
-      ::google::protobuf::scoped_ptr<XmsgChannelStatusCfgPb_KafkaProdEntry_DoNotUse> entry;
-      for (::google::protobuf::Map< ::std::string, ::std::string >::const_iterator
-          it = this->kafkaprod().begin();
-          it != this->kafkaprod().end(); ++it) {
-        entry.reset(kafkaprod_.NewEntryWrapper(
-            it->first, it->second));
-        ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-            12, *entry, output);
-        Utf8Check::Check(&*it);
-      }
-    }
   }
 
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
@@ -1012,20 +677,6 @@ void XmsgChannelStatusCfgPb::SerializeWithCachedSizes(
         2, this->cfgtype(), target);
   }
 
-  // .XmsgChannelStatusCfgMongodb mongodb = 3;
-  if (this->has_mongodb()) {
-    target = ::google::protobuf::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        3, *this->mongodb_, deterministic, target);
-  }
-
-  // .XmsgChannelStatusCfgMysql mysql = 4;
-  if (this->has_mysql()) {
-    target = ::google::protobuf::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        4, *this->mysql_, deterministic, target);
-  }
-
   // .XmsgChannelStatusCfgLog log = 5;
   if (this->has_log()) {
     target = ::google::protobuf::internal::WireFormatLite::
@@ -1061,73 +712,6 @@ void XmsgChannelStatusCfgPb::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
         9, *this->misc_, deterministic, target);
-  }
-
-  // uint64 gts = 10;
-  if (this->gts() != 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteUInt64ToArray(10, this->gts(), target);
-  }
-
-  // uint64 uts = 11;
-  if (this->uts() != 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteUInt64ToArray(11, this->uts(), target);
-  }
-
-  // map<string, string> kafkaProd = 12;
-  if (!this->kafkaprod().empty()) {
-    typedef ::google::protobuf::Map< ::std::string, ::std::string >::const_pointer
-        ConstPtr;
-    typedef ConstPtr SortItem;
-    typedef ::google::protobuf::internal::CompareByDerefFirst<SortItem> Less;
-    struct Utf8Check {
-      static void Check(ConstPtr p) {
-        ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-          p->first.data(), static_cast<int>(p->first.length()),
-          ::google::protobuf::internal::WireFormatLite::SERIALIZE,
-          "XmsgChannelStatusCfgPb.KafkaProdEntry.key");
-        ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-          p->second.data(), static_cast<int>(p->second.length()),
-          ::google::protobuf::internal::WireFormatLite::SERIALIZE,
-          "XmsgChannelStatusCfgPb.KafkaProdEntry.value");
-      }
-    };
-
-    if (deterministic &&
-        this->kafkaprod().size() > 1) {
-      ::google::protobuf::scoped_array<SortItem> items(
-          new SortItem[this->kafkaprod().size()]);
-      typedef ::google::protobuf::Map< ::std::string, ::std::string >::size_type size_type;
-      size_type n = 0;
-      for (::google::protobuf::Map< ::std::string, ::std::string >::const_iterator
-          it = this->kafkaprod().begin();
-          it != this->kafkaprod().end(); ++it, ++n) {
-        items[static_cast<ptrdiff_t>(n)] = SortItem(&*it);
-      }
-      ::std::sort(&items[0], &items[static_cast<ptrdiff_t>(n)], Less());
-      ::google::protobuf::scoped_ptr<XmsgChannelStatusCfgPb_KafkaProdEntry_DoNotUse> entry;
-      for (size_type i = 0; i < n; i++) {
-        entry.reset(kafkaprod_.NewEntryWrapper(
-            items[static_cast<ptrdiff_t>(i)]->first, items[static_cast<ptrdiff_t>(i)]->second));
-        target = ::google::protobuf::internal::WireFormatLite::
-                   InternalWriteMessageNoVirtualToArray(
-                       12, *entry, deterministic, target);
-;
-        Utf8Check::Check(items[static_cast<ptrdiff_t>(i)]);
-      }
-    } else {
-      ::google::protobuf::scoped_ptr<XmsgChannelStatusCfgPb_KafkaProdEntry_DoNotUse> entry;
-      for (::google::protobuf::Map< ::std::string, ::std::string >::const_iterator
-          it = this->kafkaprod().begin();
-          it != this->kafkaprod().end(); ++it) {
-        entry.reset(kafkaprod_.NewEntryWrapper(
-            it->first, it->second));
-        target = ::google::protobuf::internal::WireFormatLite::
-                   InternalWriteMessageNoVirtualToArray(
-                       12, *entry, deterministic, target);
-;
-        Utf8Check::Check(&*it);
-      }
-    }
   }
 
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
@@ -1169,20 +753,6 @@ size_t XmsgChannelStatusCfgPb::ByteSizeLong() const {
     }
   }
 
-  // map<string, string> kafkaProd = 12;
-  total_size += 1 *
-      ::google::protobuf::internal::FromIntSize(this->kafkaprod_size());
-  {
-    ::google::protobuf::scoped_ptr<XmsgChannelStatusCfgPb_KafkaProdEntry_DoNotUse> entry;
-    for (::google::protobuf::Map< ::std::string, ::std::string >::const_iterator
-        it = this->kafkaprod().begin();
-        it != this->kafkaprod().end(); ++it) {
-      entry.reset(kafkaprod_.NewEntryWrapper(it->first, it->second));
-      total_size += ::google::protobuf::internal::WireFormatLite::
-          MessageSizeNoVirtual(*entry);
-    }
-  }
-
   // string cgt = 1;
   if (this->cgt().size() > 0) {
     total_size += 1 +
@@ -1195,20 +765,6 @@ size_t XmsgChannelStatusCfgPb::ByteSizeLong() const {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->cfgtype());
-  }
-
-  // .XmsgChannelStatusCfgMongodb mongodb = 3;
-  if (this->has_mongodb()) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSize(
-        *this->mongodb_);
-  }
-
-  // .XmsgChannelStatusCfgMysql mysql = 4;
-  if (this->has_mysql()) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSize(
-        *this->mysql_);
   }
 
   // .XmsgChannelStatusCfgLog log = 5;
@@ -1230,20 +786,6 @@ size_t XmsgChannelStatusCfgPb::ByteSizeLong() const {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSize(
         *this->misc_);
-  }
-
-  // uint64 gts = 10;
-  if (this->gts() != 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::UInt64Size(
-        this->gts());
-  }
-
-  // uint64 uts = 11;
-  if (this->uts() != 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::UInt64Size(
-        this->uts());
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
@@ -1277,7 +819,6 @@ void XmsgChannelStatusCfgPb::MergeFrom(const XmsgChannelStatusCfgPb& from) {
 
   h2n_.MergeFrom(from.h2n_);
   n2h_.MergeFrom(from.n2h_);
-  kafkaprod_.MergeFrom(from.kafkaprod_);
   if (from.cgt().size() > 0) {
 
     cgt_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.cgt_);
@@ -1285,12 +826,6 @@ void XmsgChannelStatusCfgPb::MergeFrom(const XmsgChannelStatusCfgPb& from) {
   if (from.cfgtype().size() > 0) {
 
     cfgtype_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.cfgtype_);
-  }
-  if (from.has_mongodb()) {
-    mutable_mongodb()->::XmsgChannelStatusCfgMongodb::MergeFrom(from.mongodb());
-  }
-  if (from.has_mysql()) {
-    mutable_mysql()->::XmsgChannelStatusCfgMysql::MergeFrom(from.mysql());
   }
   if (from.has_log()) {
     mutable_log()->::XmsgChannelStatusCfgLog::MergeFrom(from.log());
@@ -1300,12 +835,6 @@ void XmsgChannelStatusCfgPb::MergeFrom(const XmsgChannelStatusCfgPb& from) {
   }
   if (from.has_misc()) {
     mutable_misc()->::XmsgChannelStatusCfgMisc::MergeFrom(from.misc());
-  }
-  if (from.gts() != 0) {
-    set_gts(from.gts());
-  }
-  if (from.uts() != 0) {
-    set_uts(from.uts());
   }
 }
 
@@ -1335,785 +864,16 @@ void XmsgChannelStatusCfgPb::InternalSwap(XmsgChannelStatusCfgPb* other) {
   using std::swap;
   h2n_.InternalSwap(&other->h2n_);
   n2h_.InternalSwap(&other->n2h_);
-  kafkaprod_.Swap(&other->kafkaprod_);
   cgt_.Swap(&other->cgt_);
   cfgtype_.Swap(&other->cfgtype_);
-  swap(mongodb_, other->mongodb_);
-  swap(mysql_, other->mysql_);
   swap(log_, other->log_);
   swap(xsctcpcfg_, other->xsctcpcfg_);
   swap(misc_, other->misc_);
-  swap(gts_, other->gts_);
-  swap(uts_, other->uts_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata XmsgChannelStatusCfgPb::GetMetadata() const {
-  protobuf_cfg_2dx_2dmsg_2dchannel_2dstatus_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_cfg_2dx_2dmsg_2dchannel_2dstatus_2eproto::file_level_metadata[kIndexInFileMessages];
-}
-
-
-// ===================================================================
-
-void XmsgChannelStatusCfgMongodb::InitAsDefaultInstance() {
-}
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int XmsgChannelStatusCfgMongodb::kUriFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-XmsgChannelStatusCfgMongodb::XmsgChannelStatusCfgMongodb()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    ::protobuf_cfg_2dx_2dmsg_2dchannel_2dstatus_2eproto::InitDefaultsXmsgChannelStatusCfgMongodb();
-  }
-  SharedCtor();
-  // @@protoc_insertion_point(constructor:XmsgChannelStatusCfgMongodb)
-}
-XmsgChannelStatusCfgMongodb::XmsgChannelStatusCfgMongodb(const XmsgChannelStatusCfgMongodb& from)
-  : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  uri_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.uri().size() > 0) {
-    uri_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.uri_);
-  }
-  // @@protoc_insertion_point(copy_constructor:XmsgChannelStatusCfgMongodb)
-}
-
-void XmsgChannelStatusCfgMongodb::SharedCtor() {
-  uri_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  _cached_size_ = 0;
-}
-
-XmsgChannelStatusCfgMongodb::~XmsgChannelStatusCfgMongodb() {
-  // @@protoc_insertion_point(destructor:XmsgChannelStatusCfgMongodb)
-  SharedDtor();
-}
-
-void XmsgChannelStatusCfgMongodb::SharedDtor() {
-  uri_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-
-void XmsgChannelStatusCfgMongodb::SetCachedSize(int size) const {
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
-}
-const ::google::protobuf::Descriptor* XmsgChannelStatusCfgMongodb::descriptor() {
-  ::protobuf_cfg_2dx_2dmsg_2dchannel_2dstatus_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_cfg_2dx_2dmsg_2dchannel_2dstatus_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
-const XmsgChannelStatusCfgMongodb& XmsgChannelStatusCfgMongodb::default_instance() {
-  ::protobuf_cfg_2dx_2dmsg_2dchannel_2dstatus_2eproto::InitDefaultsXmsgChannelStatusCfgMongodb();
-  return *internal_default_instance();
-}
-
-XmsgChannelStatusCfgMongodb* XmsgChannelStatusCfgMongodb::New(::google::protobuf::Arena* arena) const {
-  XmsgChannelStatusCfgMongodb* n = new XmsgChannelStatusCfgMongodb;
-  if (arena != NULL) {
-    arena->Own(n);
-  }
-  return n;
-}
-
-void XmsgChannelStatusCfgMongodb::Clear() {
-// @@protoc_insertion_point(message_clear_start:XmsgChannelStatusCfgMongodb)
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  // Prevent compiler warnings about cached_has_bits being unused
-  (void) cached_has_bits;
-
-  uri_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  _internal_metadata_.Clear();
-}
-
-bool XmsgChannelStatusCfgMongodb::MergePartialFromCodedStream(
-    ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::google::protobuf::uint32 tag;
-  // @@protoc_insertion_point(parse_start:XmsgChannelStatusCfgMongodb)
-  for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string uri = 1;
-      case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
-                input, this->mutable_uri()));
-          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-            this->uri().data(), static_cast<int>(this->uri().length()),
-            ::google::protobuf::internal::WireFormatLite::PARSE,
-            "XmsgChannelStatusCfgMongodb.uri"));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      default: {
-      handle_unusual:
-        if (tag == 0) {
-          goto success;
-        }
-        DO_(::google::protobuf::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
-      }
-    }
-  }
-success:
-  // @@protoc_insertion_point(parse_success:XmsgChannelStatusCfgMongodb)
-  return true;
-failure:
-  // @@protoc_insertion_point(parse_failure:XmsgChannelStatusCfgMongodb)
-  return false;
-#undef DO_
-}
-
-void XmsgChannelStatusCfgMongodb::SerializeWithCachedSizes(
-    ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:XmsgChannelStatusCfgMongodb)
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  // string uri = 1;
-  if (this->uri().size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-      this->uri().data(), static_cast<int>(this->uri().length()),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
-      "XmsgChannelStatusCfgMongodb.uri");
-    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
-      1, this->uri(), output);
-  }
-
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
-    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
-  }
-  // @@protoc_insertion_point(serialize_end:XmsgChannelStatusCfgMongodb)
-}
-
-::google::protobuf::uint8* XmsgChannelStatusCfgMongodb::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
-  // @@protoc_insertion_point(serialize_to_array_start:XmsgChannelStatusCfgMongodb)
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  // string uri = 1;
-  if (this->uri().size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-      this->uri().data(), static_cast<int>(this->uri().length()),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
-      "XmsgChannelStatusCfgMongodb.uri");
-    target =
-      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
-        1, this->uri(), target);
-  }
-
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
-    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
-  }
-  // @@protoc_insertion_point(serialize_to_array_end:XmsgChannelStatusCfgMongodb)
-  return target;
-}
-
-size_t XmsgChannelStatusCfgMongodb::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:XmsgChannelStatusCfgMongodb)
-  size_t total_size = 0;
-
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
-    total_size +=
-      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
-  }
-  // string uri = 1;
-  if (this->uri().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->uri());
-  }
-
-  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = cached_size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
-  return total_size;
-}
-
-void XmsgChannelStatusCfgMongodb::MergeFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:XmsgChannelStatusCfgMongodb)
-  GOOGLE_DCHECK_NE(&from, this);
-  const XmsgChannelStatusCfgMongodb* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const XmsgChannelStatusCfgMongodb>(
-          &from);
-  if (source == NULL) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:XmsgChannelStatusCfgMongodb)
-    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:XmsgChannelStatusCfgMongodb)
-    MergeFrom(*source);
-  }
-}
-
-void XmsgChannelStatusCfgMongodb::MergeFrom(const XmsgChannelStatusCfgMongodb& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:XmsgChannelStatusCfgMongodb)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  if (from.uri().size() > 0) {
-
-    uri_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.uri_);
-  }
-}
-
-void XmsgChannelStatusCfgMongodb::CopyFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:XmsgChannelStatusCfgMongodb)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
-}
-
-void XmsgChannelStatusCfgMongodb::CopyFrom(const XmsgChannelStatusCfgMongodb& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:XmsgChannelStatusCfgMongodb)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
-}
-
-bool XmsgChannelStatusCfgMongodb::IsInitialized() const {
-  return true;
-}
-
-void XmsgChannelStatusCfgMongodb::Swap(XmsgChannelStatusCfgMongodb* other) {
-  if (other == this) return;
-  InternalSwap(other);
-}
-void XmsgChannelStatusCfgMongodb::InternalSwap(XmsgChannelStatusCfgMongodb* other) {
-  using std::swap;
-  uri_.Swap(&other->uri_);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
-  swap(_cached_size_, other->_cached_size_);
-}
-
-::google::protobuf::Metadata XmsgChannelStatusCfgMongodb::GetMetadata() const {
-  protobuf_cfg_2dx_2dmsg_2dchannel_2dstatus_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_cfg_2dx_2dmsg_2dchannel_2dstatus_2eproto::file_level_metadata[kIndexInFileMessages];
-}
-
-
-// ===================================================================
-
-void XmsgChannelStatusCfgMysql::InitAsDefaultInstance() {
-}
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int XmsgChannelStatusCfgMysql::kHostFieldNumber;
-const int XmsgChannelStatusCfgMysql::kPortFieldNumber;
-const int XmsgChannelStatusCfgMysql::kDbFieldNumber;
-const int XmsgChannelStatusCfgMysql::kUsrFieldNumber;
-const int XmsgChannelStatusCfgMysql::kPasswordFieldNumber;
-const int XmsgChannelStatusCfgMysql::kPoolSizeFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-XmsgChannelStatusCfgMysql::XmsgChannelStatusCfgMysql()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    ::protobuf_cfg_2dx_2dmsg_2dchannel_2dstatus_2eproto::InitDefaultsXmsgChannelStatusCfgMysql();
-  }
-  SharedCtor();
-  // @@protoc_insertion_point(constructor:XmsgChannelStatusCfgMysql)
-}
-XmsgChannelStatusCfgMysql::XmsgChannelStatusCfgMysql(const XmsgChannelStatusCfgMysql& from)
-  : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  host_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.host().size() > 0) {
-    host_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.host_);
-  }
-  db_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.db().size() > 0) {
-    db_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.db_);
-  }
-  usr_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.usr().size() > 0) {
-    usr_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.usr_);
-  }
-  password_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.password().size() > 0) {
-    password_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.password_);
-  }
-  ::memcpy(&port_, &from.port_,
-    static_cast<size_t>(reinterpret_cast<char*>(&poolsize_) -
-    reinterpret_cast<char*>(&port_)) + sizeof(poolsize_));
-  // @@protoc_insertion_point(copy_constructor:XmsgChannelStatusCfgMysql)
-}
-
-void XmsgChannelStatusCfgMysql::SharedCtor() {
-  host_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  db_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  usr_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  password_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  ::memset(&port_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&poolsize_) -
-      reinterpret_cast<char*>(&port_)) + sizeof(poolsize_));
-  _cached_size_ = 0;
-}
-
-XmsgChannelStatusCfgMysql::~XmsgChannelStatusCfgMysql() {
-  // @@protoc_insertion_point(destructor:XmsgChannelStatusCfgMysql)
-  SharedDtor();
-}
-
-void XmsgChannelStatusCfgMysql::SharedDtor() {
-  host_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  db_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  usr_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  password_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-
-void XmsgChannelStatusCfgMysql::SetCachedSize(int size) const {
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
-}
-const ::google::protobuf::Descriptor* XmsgChannelStatusCfgMysql::descriptor() {
-  ::protobuf_cfg_2dx_2dmsg_2dchannel_2dstatus_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_cfg_2dx_2dmsg_2dchannel_2dstatus_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
-const XmsgChannelStatusCfgMysql& XmsgChannelStatusCfgMysql::default_instance() {
-  ::protobuf_cfg_2dx_2dmsg_2dchannel_2dstatus_2eproto::InitDefaultsXmsgChannelStatusCfgMysql();
-  return *internal_default_instance();
-}
-
-XmsgChannelStatusCfgMysql* XmsgChannelStatusCfgMysql::New(::google::protobuf::Arena* arena) const {
-  XmsgChannelStatusCfgMysql* n = new XmsgChannelStatusCfgMysql;
-  if (arena != NULL) {
-    arena->Own(n);
-  }
-  return n;
-}
-
-void XmsgChannelStatusCfgMysql::Clear() {
-// @@protoc_insertion_point(message_clear_start:XmsgChannelStatusCfgMysql)
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  // Prevent compiler warnings about cached_has_bits being unused
-  (void) cached_has_bits;
-
-  host_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  db_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  usr_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  password_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  ::memset(&port_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&poolsize_) -
-      reinterpret_cast<char*>(&port_)) + sizeof(poolsize_));
-  _internal_metadata_.Clear();
-}
-
-bool XmsgChannelStatusCfgMysql::MergePartialFromCodedStream(
-    ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::google::protobuf::uint32 tag;
-  // @@protoc_insertion_point(parse_start:XmsgChannelStatusCfgMysql)
-  for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string host = 1;
-      case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
-                input, this->mutable_host()));
-          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-            this->host().data(), static_cast<int>(this->host().length()),
-            ::google::protobuf::internal::WireFormatLite::PARSE,
-            "XmsgChannelStatusCfgMysql.host"));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // uint32 port = 2;
-      case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
-                 input, &port_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // string db = 3;
-      case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
-                input, this->mutable_db()));
-          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-            this->db().data(), static_cast<int>(this->db().length()),
-            ::google::protobuf::internal::WireFormatLite::PARSE,
-            "XmsgChannelStatusCfgMysql.db"));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // string usr = 4;
-      case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(34u /* 34 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
-                input, this->mutable_usr()));
-          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-            this->usr().data(), static_cast<int>(this->usr().length()),
-            ::google::protobuf::internal::WireFormatLite::PARSE,
-            "XmsgChannelStatusCfgMysql.usr"));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // string password = 5;
-      case 5: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(42u /* 42 & 0xFF */)) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
-                input, this->mutable_password()));
-          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-            this->password().data(), static_cast<int>(this->password().length()),
-            ::google::protobuf::internal::WireFormatLite::PARSE,
-            "XmsgChannelStatusCfgMysql.password"));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // uint32 poolSize = 6;
-      case 6: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(48u /* 48 & 0xFF */)) {
-
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
-                 input, &poolsize_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      default: {
-      handle_unusual:
-        if (tag == 0) {
-          goto success;
-        }
-        DO_(::google::protobuf::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
-      }
-    }
-  }
-success:
-  // @@protoc_insertion_point(parse_success:XmsgChannelStatusCfgMysql)
-  return true;
-failure:
-  // @@protoc_insertion_point(parse_failure:XmsgChannelStatusCfgMysql)
-  return false;
-#undef DO_
-}
-
-void XmsgChannelStatusCfgMysql::SerializeWithCachedSizes(
-    ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:XmsgChannelStatusCfgMysql)
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  // string host = 1;
-  if (this->host().size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-      this->host().data(), static_cast<int>(this->host().length()),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
-      "XmsgChannelStatusCfgMysql.host");
-    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
-      1, this->host(), output);
-  }
-
-  // uint32 port = 2;
-  if (this->port() != 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteUInt32(2, this->port(), output);
-  }
-
-  // string db = 3;
-  if (this->db().size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-      this->db().data(), static_cast<int>(this->db().length()),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
-      "XmsgChannelStatusCfgMysql.db");
-    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
-      3, this->db(), output);
-  }
-
-  // string usr = 4;
-  if (this->usr().size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-      this->usr().data(), static_cast<int>(this->usr().length()),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
-      "XmsgChannelStatusCfgMysql.usr");
-    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
-      4, this->usr(), output);
-  }
-
-  // string password = 5;
-  if (this->password().size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-      this->password().data(), static_cast<int>(this->password().length()),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
-      "XmsgChannelStatusCfgMysql.password");
-    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
-      5, this->password(), output);
-  }
-
-  // uint32 poolSize = 6;
-  if (this->poolsize() != 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteUInt32(6, this->poolsize(), output);
-  }
-
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
-    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
-  }
-  // @@protoc_insertion_point(serialize_end:XmsgChannelStatusCfgMysql)
-}
-
-::google::protobuf::uint8* XmsgChannelStatusCfgMysql::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
-  // @@protoc_insertion_point(serialize_to_array_start:XmsgChannelStatusCfgMysql)
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  // string host = 1;
-  if (this->host().size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-      this->host().data(), static_cast<int>(this->host().length()),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
-      "XmsgChannelStatusCfgMysql.host");
-    target =
-      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
-        1, this->host(), target);
-  }
-
-  // uint32 port = 2;
-  if (this->port() != 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(2, this->port(), target);
-  }
-
-  // string db = 3;
-  if (this->db().size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-      this->db().data(), static_cast<int>(this->db().length()),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
-      "XmsgChannelStatusCfgMysql.db");
-    target =
-      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
-        3, this->db(), target);
-  }
-
-  // string usr = 4;
-  if (this->usr().size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-      this->usr().data(), static_cast<int>(this->usr().length()),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
-      "XmsgChannelStatusCfgMysql.usr");
-    target =
-      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
-        4, this->usr(), target);
-  }
-
-  // string password = 5;
-  if (this->password().size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-      this->password().data(), static_cast<int>(this->password().length()),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
-      "XmsgChannelStatusCfgMysql.password");
-    target =
-      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
-        5, this->password(), target);
-  }
-
-  // uint32 poolSize = 6;
-  if (this->poolsize() != 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(6, this->poolsize(), target);
-  }
-
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
-    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
-  }
-  // @@protoc_insertion_point(serialize_to_array_end:XmsgChannelStatusCfgMysql)
-  return target;
-}
-
-size_t XmsgChannelStatusCfgMysql::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:XmsgChannelStatusCfgMysql)
-  size_t total_size = 0;
-
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
-    total_size +=
-      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
-  }
-  // string host = 1;
-  if (this->host().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->host());
-  }
-
-  // string db = 3;
-  if (this->db().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->db());
-  }
-
-  // string usr = 4;
-  if (this->usr().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->usr());
-  }
-
-  // string password = 5;
-  if (this->password().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->password());
-  }
-
-  // uint32 port = 2;
-  if (this->port() != 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::UInt32Size(
-        this->port());
-  }
-
-  // uint32 poolSize = 6;
-  if (this->poolsize() != 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::UInt32Size(
-        this->poolsize());
-  }
-
-  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = cached_size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
-  return total_size;
-}
-
-void XmsgChannelStatusCfgMysql::MergeFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:XmsgChannelStatusCfgMysql)
-  GOOGLE_DCHECK_NE(&from, this);
-  const XmsgChannelStatusCfgMysql* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const XmsgChannelStatusCfgMysql>(
-          &from);
-  if (source == NULL) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:XmsgChannelStatusCfgMysql)
-    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:XmsgChannelStatusCfgMysql)
-    MergeFrom(*source);
-  }
-}
-
-void XmsgChannelStatusCfgMysql::MergeFrom(const XmsgChannelStatusCfgMysql& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:XmsgChannelStatusCfgMysql)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  if (from.host().size() > 0) {
-
-    host_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.host_);
-  }
-  if (from.db().size() > 0) {
-
-    db_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.db_);
-  }
-  if (from.usr().size() > 0) {
-
-    usr_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.usr_);
-  }
-  if (from.password().size() > 0) {
-
-    password_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.password_);
-  }
-  if (from.port() != 0) {
-    set_port(from.port());
-  }
-  if (from.poolsize() != 0) {
-    set_poolsize(from.poolsize());
-  }
-}
-
-void XmsgChannelStatusCfgMysql::CopyFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:XmsgChannelStatusCfgMysql)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
-}
-
-void XmsgChannelStatusCfgMysql::CopyFrom(const XmsgChannelStatusCfgMysql& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:XmsgChannelStatusCfgMysql)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
-}
-
-bool XmsgChannelStatusCfgMysql::IsInitialized() const {
-  return true;
-}
-
-void XmsgChannelStatusCfgMysql::Swap(XmsgChannelStatusCfgMysql* other) {
-  if (other == this) return;
-  InternalSwap(other);
-}
-void XmsgChannelStatusCfgMysql::InternalSwap(XmsgChannelStatusCfgMysql* other) {
-  using std::swap;
-  host_.Swap(&other->host_);
-  db_.Swap(&other->db_);
-  usr_.Swap(&other->usr_);
-  password_.Swap(&other->password_);
-  swap(port_, other->port_);
-  swap(poolsize_, other->poolsize_);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
-  swap(_cached_size_, other->_cached_size_);
-}
-
-::google::protobuf::Metadata XmsgChannelStatusCfgMysql::GetMetadata() const {
   protobuf_cfg_2dx_2dmsg_2dchannel_2dstatus_2eproto::protobuf_AssignDescriptorsOnce();
   return ::protobuf_cfg_2dx_2dmsg_2dchannel_2dstatus_2eproto::file_level_metadata[kIndexInFileMessages];
 }

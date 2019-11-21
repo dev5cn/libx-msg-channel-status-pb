@@ -28,9 +28,6 @@
 #include <google/protobuf/message.h>
 #include <google/protobuf/repeated_field.h>  // IWYU pragma: export
 #include <google/protobuf/extension_set.h>  // IWYU pragma: export
-#include <google/protobuf/map.h>  // IWYU pragma: export
-#include <google/protobuf/map_entry.h>
-#include <google/protobuf/map_field_inl.h>
 #include <google/protobuf/unknown_field_set.h>
 // @@protoc_insertion_point(includes)
 
@@ -39,20 +36,14 @@ namespace protobuf_cfg_2dx_2dmsg_2dchannel_2dstatus_2eproto {
 struct TableStruct {
   static const ::google::protobuf::internal::ParseTableField entries[];
   static const ::google::protobuf::internal::AuxillaryParseTableField aux[];
-  static const ::google::protobuf::internal::ParseTable schema[9];
+  static const ::google::protobuf::internal::ParseTable schema[6];
   static const ::google::protobuf::internal::FieldMetadata field_metadata[];
   static const ::google::protobuf::internal::SerializationTable serialization_table[];
   static const ::google::protobuf::uint32 offsets[];
 };
 void AddDescriptors();
-void InitDefaultsXmsgChannelStatusCfgPb_KafkaProdEntry_DoNotUseImpl();
-void InitDefaultsXmsgChannelStatusCfgPb_KafkaProdEntry_DoNotUse();
 void InitDefaultsXmsgChannelStatusCfgPbImpl();
 void InitDefaultsXmsgChannelStatusCfgPb();
-void InitDefaultsXmsgChannelStatusCfgMongodbImpl();
-void InitDefaultsXmsgChannelStatusCfgMongodb();
-void InitDefaultsXmsgChannelStatusCfgMysqlImpl();
-void InitDefaultsXmsgChannelStatusCfgMysql();
 void InitDefaultsXmsgChannelStatusCfgLogImpl();
 void InitDefaultsXmsgChannelStatusCfgLog();
 void InitDefaultsXmsgChannelStatusCfgXscTcpServerImpl();
@@ -64,10 +55,7 @@ void InitDefaultsXmsgChannelStatusCfgXmsgNeN2hAddr();
 void InitDefaultsXmsgChannelStatusCfgMiscImpl();
 void InitDefaultsXmsgChannelStatusCfgMisc();
 inline void InitDefaults() {
-  InitDefaultsXmsgChannelStatusCfgPb_KafkaProdEntry_DoNotUse();
   InitDefaultsXmsgChannelStatusCfgPb();
-  InitDefaultsXmsgChannelStatusCfgMongodb();
-  InitDefaultsXmsgChannelStatusCfgMysql();
   InitDefaultsXmsgChannelStatusCfgLog();
   InitDefaultsXmsgChannelStatusCfgXscTcpServer();
   InitDefaultsXmsgChannelStatusCfgXmsgNeH2nAddr();
@@ -81,18 +69,9 @@ extern XmsgChannelStatusCfgLogDefaultTypeInternal _XmsgChannelStatusCfgLog_defau
 class XmsgChannelStatusCfgMisc;
 class XmsgChannelStatusCfgMiscDefaultTypeInternal;
 extern XmsgChannelStatusCfgMiscDefaultTypeInternal _XmsgChannelStatusCfgMisc_default_instance_;
-class XmsgChannelStatusCfgMongodb;
-class XmsgChannelStatusCfgMongodbDefaultTypeInternal;
-extern XmsgChannelStatusCfgMongodbDefaultTypeInternal _XmsgChannelStatusCfgMongodb_default_instance_;
-class XmsgChannelStatusCfgMysql;
-class XmsgChannelStatusCfgMysqlDefaultTypeInternal;
-extern XmsgChannelStatusCfgMysqlDefaultTypeInternal _XmsgChannelStatusCfgMysql_default_instance_;
 class XmsgChannelStatusCfgPb;
 class XmsgChannelStatusCfgPbDefaultTypeInternal;
 extern XmsgChannelStatusCfgPbDefaultTypeInternal _XmsgChannelStatusCfgPb_default_instance_;
-class XmsgChannelStatusCfgPb_KafkaProdEntry_DoNotUse;
-class XmsgChannelStatusCfgPb_KafkaProdEntry_DoNotUseDefaultTypeInternal;
-extern XmsgChannelStatusCfgPb_KafkaProdEntry_DoNotUseDefaultTypeInternal _XmsgChannelStatusCfgPb_KafkaProdEntry_DoNotUse_default_instance_;
 class XmsgChannelStatusCfgXmsgNeH2nAddr;
 class XmsgChannelStatusCfgXmsgNeH2nAddrDefaultTypeInternal;
 extern XmsgChannelStatusCfgXmsgNeH2nAddrDefaultTypeInternal _XmsgChannelStatusCfgXmsgNeH2nAddr_default_instance_;
@@ -104,27 +83,6 @@ class XmsgChannelStatusCfgXscTcpServerDefaultTypeInternal;
 extern XmsgChannelStatusCfgXscTcpServerDefaultTypeInternal _XmsgChannelStatusCfgXscTcpServer_default_instance_;
 
 // ===================================================================
-
-class XmsgChannelStatusCfgPb_KafkaProdEntry_DoNotUse : public ::google::protobuf::internal::MapEntry<XmsgChannelStatusCfgPb_KafkaProdEntry_DoNotUse, 
-    ::std::string, ::std::string,
-    ::google::protobuf::internal::WireFormatLite::TYPE_STRING,
-    ::google::protobuf::internal::WireFormatLite::TYPE_STRING,
-    0 > {
-public:
-  typedef ::google::protobuf::internal::MapEntry<XmsgChannelStatusCfgPb_KafkaProdEntry_DoNotUse, 
-    ::std::string, ::std::string,
-    ::google::protobuf::internal::WireFormatLite::TYPE_STRING,
-    ::google::protobuf::internal::WireFormatLite::TYPE_STRING,
-    0 > SuperType;
-  XmsgChannelStatusCfgPb_KafkaProdEntry_DoNotUse();
-  XmsgChannelStatusCfgPb_KafkaProdEntry_DoNotUse(::google::protobuf::Arena* arena);
-  void MergeFrom(const XmsgChannelStatusCfgPb_KafkaProdEntry_DoNotUse& other);
-  static const XmsgChannelStatusCfgPb_KafkaProdEntry_DoNotUse* internal_default_instance() { return reinterpret_cast<const XmsgChannelStatusCfgPb_KafkaProdEntry_DoNotUse*>(&_XmsgChannelStatusCfgPb_KafkaProdEntry_DoNotUse_default_instance_); }
-  void MergeFrom(const ::google::protobuf::Message& other) PROTOBUF_FINAL;
-  ::google::protobuf::Metadata GetMetadata() const;
-};
-
-// -------------------------------------------------------------------
 
 class XmsgChannelStatusCfgPb : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:XmsgChannelStatusCfgPb) */ {
  public:
@@ -161,7 +119,7 @@ class XmsgChannelStatusCfgPb : public ::google::protobuf::Message /* @@protoc_in
                &_XmsgChannelStatusCfgPb_default_instance_);
   }
   static PROTOBUF_CONSTEXPR int const kIndexInFileMessages =
-    1;
+    0;
 
   void Swap(XmsgChannelStatusCfgPb* other);
   friend void swap(XmsgChannelStatusCfgPb& a, XmsgChannelStatusCfgPb& b) {
@@ -206,7 +164,6 @@ class XmsgChannelStatusCfgPb : public ::google::protobuf::Message /* @@protoc_in
 
   // nested types ----------------------------------------------------
 
-
   // accessors -------------------------------------------------------
 
   // repeated .XmsgChannelStatusCfgXmsgNeH2nAddr h2n = 7;
@@ -232,15 +189,6 @@ class XmsgChannelStatusCfgPb : public ::google::protobuf::Message /* @@protoc_in
       mutable_n2h();
   const ::google::protobuf::RepeatedPtrField< ::XmsgChannelStatusCfgXmsgNeN2hAddr >&
       n2h() const;
-
-  // map<string, string> kafkaProd = 12;
-  int kafkaprod_size() const;
-  void clear_kafkaprod();
-  static const int kKafkaProdFieldNumber = 12;
-  const ::google::protobuf::Map< ::std::string, ::std::string >&
-      kafkaprod() const;
-  ::google::protobuf::Map< ::std::string, ::std::string >*
-      mutable_kafkaprod();
 
   // string cgt = 1;
   void clear_cgt();
@@ -270,24 +218,6 @@ class XmsgChannelStatusCfgPb : public ::google::protobuf::Message /* @@protoc_in
   ::std::string* release_cfgtype();
   void set_allocated_cfgtype(::std::string* cfgtype);
 
-  // .XmsgChannelStatusCfgMongodb mongodb = 3;
-  bool has_mongodb() const;
-  void clear_mongodb();
-  static const int kMongodbFieldNumber = 3;
-  const ::XmsgChannelStatusCfgMongodb& mongodb() const;
-  ::XmsgChannelStatusCfgMongodb* release_mongodb();
-  ::XmsgChannelStatusCfgMongodb* mutable_mongodb();
-  void set_allocated_mongodb(::XmsgChannelStatusCfgMongodb* mongodb);
-
-  // .XmsgChannelStatusCfgMysql mysql = 4;
-  bool has_mysql() const;
-  void clear_mysql();
-  static const int kMysqlFieldNumber = 4;
-  const ::XmsgChannelStatusCfgMysql& mysql() const;
-  ::XmsgChannelStatusCfgMysql* release_mysql();
-  ::XmsgChannelStatusCfgMysql* mutable_mysql();
-  void set_allocated_mysql(::XmsgChannelStatusCfgMysql* mysql);
-
   // .XmsgChannelStatusCfgLog log = 5;
   bool has_log() const;
   void clear_log();
@@ -315,315 +245,20 @@ class XmsgChannelStatusCfgPb : public ::google::protobuf::Message /* @@protoc_in
   ::XmsgChannelStatusCfgMisc* mutable_misc();
   void set_allocated_misc(::XmsgChannelStatusCfgMisc* misc);
 
-  // uint64 gts = 10;
-  void clear_gts();
-  static const int kGtsFieldNumber = 10;
-  ::google::protobuf::uint64 gts() const;
-  void set_gts(::google::protobuf::uint64 value);
-
-  // uint64 uts = 11;
-  void clear_uts();
-  static const int kUtsFieldNumber = 11;
-  ::google::protobuf::uint64 uts() const;
-  void set_uts(::google::protobuf::uint64 value);
-
   // @@protoc_insertion_point(class_scope:XmsgChannelStatusCfgPb)
  private:
 
   ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
   ::google::protobuf::RepeatedPtrField< ::XmsgChannelStatusCfgXmsgNeH2nAddr > h2n_;
   ::google::protobuf::RepeatedPtrField< ::XmsgChannelStatusCfgXmsgNeN2hAddr > n2h_;
-  ::google::protobuf::internal::MapField<
-      XmsgChannelStatusCfgPb_KafkaProdEntry_DoNotUse,
-      ::std::string, ::std::string,
-      ::google::protobuf::internal::WireFormatLite::TYPE_STRING,
-      ::google::protobuf::internal::WireFormatLite::TYPE_STRING,
-      0 > kafkaprod_;
   ::google::protobuf::internal::ArenaStringPtr cgt_;
   ::google::protobuf::internal::ArenaStringPtr cfgtype_;
-  ::XmsgChannelStatusCfgMongodb* mongodb_;
-  ::XmsgChannelStatusCfgMysql* mysql_;
   ::XmsgChannelStatusCfgLog* log_;
   ::XmsgChannelStatusCfgXscTcpServer* xsctcpcfg_;
   ::XmsgChannelStatusCfgMisc* misc_;
-  ::google::protobuf::uint64 gts_;
-  ::google::protobuf::uint64 uts_;
   mutable int _cached_size_;
   friend struct ::protobuf_cfg_2dx_2dmsg_2dchannel_2dstatus_2eproto::TableStruct;
   friend void ::protobuf_cfg_2dx_2dmsg_2dchannel_2dstatus_2eproto::InitDefaultsXmsgChannelStatusCfgPbImpl();
-};
-// -------------------------------------------------------------------
-
-class XmsgChannelStatusCfgMongodb : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:XmsgChannelStatusCfgMongodb) */ {
- public:
-  XmsgChannelStatusCfgMongodb();
-  virtual ~XmsgChannelStatusCfgMongodb();
-
-  XmsgChannelStatusCfgMongodb(const XmsgChannelStatusCfgMongodb& from);
-
-  inline XmsgChannelStatusCfgMongodb& operator=(const XmsgChannelStatusCfgMongodb& from) {
-    CopyFrom(from);
-    return *this;
-  }
-  #if LANG_CXX11
-  XmsgChannelStatusCfgMongodb(XmsgChannelStatusCfgMongodb&& from) noexcept
-    : XmsgChannelStatusCfgMongodb() {
-    *this = ::std::move(from);
-  }
-
-  inline XmsgChannelStatusCfgMongodb& operator=(XmsgChannelStatusCfgMongodb&& from) noexcept {
-    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
-      if (this != &from) InternalSwap(&from);
-    } else {
-      CopyFrom(from);
-    }
-    return *this;
-  }
-  #endif
-  static const ::google::protobuf::Descriptor* descriptor();
-  static const XmsgChannelStatusCfgMongodb& default_instance();
-
-  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
-  static inline const XmsgChannelStatusCfgMongodb* internal_default_instance() {
-    return reinterpret_cast<const XmsgChannelStatusCfgMongodb*>(
-               &_XmsgChannelStatusCfgMongodb_default_instance_);
-  }
-  static PROTOBUF_CONSTEXPR int const kIndexInFileMessages =
-    2;
-
-  void Swap(XmsgChannelStatusCfgMongodb* other);
-  friend void swap(XmsgChannelStatusCfgMongodb& a, XmsgChannelStatusCfgMongodb& b) {
-    a.Swap(&b);
-  }
-
-  // implements Message ----------------------------------------------
-
-  inline XmsgChannelStatusCfgMongodb* New() const PROTOBUF_FINAL { return New(NULL); }
-
-  XmsgChannelStatusCfgMongodb* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void CopyFrom(const XmsgChannelStatusCfgMongodb& from);
-  void MergeFrom(const XmsgChannelStatusCfgMongodb& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
-
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
-  bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
-  void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
-  private:
-  void SharedCtor();
-  void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
-  void InternalSwap(XmsgChannelStatusCfgMongodb* other);
-  private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
-  }
-  inline void* MaybeArenaPtr() const {
-    return NULL;
-  }
-  public:
-
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
-
-  // nested types ----------------------------------------------------
-
-  // accessors -------------------------------------------------------
-
-  // string uri = 1;
-  void clear_uri();
-  static const int kUriFieldNumber = 1;
-  const ::std::string& uri() const;
-  void set_uri(const ::std::string& value);
-  #if LANG_CXX11
-  void set_uri(::std::string&& value);
-  #endif
-  void set_uri(const char* value);
-  void set_uri(const char* value, size_t size);
-  ::std::string* mutable_uri();
-  ::std::string* release_uri();
-  void set_allocated_uri(::std::string* uri);
-
-  // @@protoc_insertion_point(class_scope:XmsgChannelStatusCfgMongodb)
- private:
-
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::internal::ArenaStringPtr uri_;
-  mutable int _cached_size_;
-  friend struct ::protobuf_cfg_2dx_2dmsg_2dchannel_2dstatus_2eproto::TableStruct;
-  friend void ::protobuf_cfg_2dx_2dmsg_2dchannel_2dstatus_2eproto::InitDefaultsXmsgChannelStatusCfgMongodbImpl();
-};
-// -------------------------------------------------------------------
-
-class XmsgChannelStatusCfgMysql : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:XmsgChannelStatusCfgMysql) */ {
- public:
-  XmsgChannelStatusCfgMysql();
-  virtual ~XmsgChannelStatusCfgMysql();
-
-  XmsgChannelStatusCfgMysql(const XmsgChannelStatusCfgMysql& from);
-
-  inline XmsgChannelStatusCfgMysql& operator=(const XmsgChannelStatusCfgMysql& from) {
-    CopyFrom(from);
-    return *this;
-  }
-  #if LANG_CXX11
-  XmsgChannelStatusCfgMysql(XmsgChannelStatusCfgMysql&& from) noexcept
-    : XmsgChannelStatusCfgMysql() {
-    *this = ::std::move(from);
-  }
-
-  inline XmsgChannelStatusCfgMysql& operator=(XmsgChannelStatusCfgMysql&& from) noexcept {
-    if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
-      if (this != &from) InternalSwap(&from);
-    } else {
-      CopyFrom(from);
-    }
-    return *this;
-  }
-  #endif
-  static const ::google::protobuf::Descriptor* descriptor();
-  static const XmsgChannelStatusCfgMysql& default_instance();
-
-  static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
-  static inline const XmsgChannelStatusCfgMysql* internal_default_instance() {
-    return reinterpret_cast<const XmsgChannelStatusCfgMysql*>(
-               &_XmsgChannelStatusCfgMysql_default_instance_);
-  }
-  static PROTOBUF_CONSTEXPR int const kIndexInFileMessages =
-    3;
-
-  void Swap(XmsgChannelStatusCfgMysql* other);
-  friend void swap(XmsgChannelStatusCfgMysql& a, XmsgChannelStatusCfgMysql& b) {
-    a.Swap(&b);
-  }
-
-  // implements Message ----------------------------------------------
-
-  inline XmsgChannelStatusCfgMysql* New() const PROTOBUF_FINAL { return New(NULL); }
-
-  XmsgChannelStatusCfgMysql* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void CopyFrom(const XmsgChannelStatusCfgMysql& from);
-  void MergeFrom(const XmsgChannelStatusCfgMysql& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
-
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
-  bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
-  void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
-  private:
-  void SharedCtor();
-  void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
-  void InternalSwap(XmsgChannelStatusCfgMysql* other);
-  private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
-  }
-  inline void* MaybeArenaPtr() const {
-    return NULL;
-  }
-  public:
-
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
-
-  // nested types ----------------------------------------------------
-
-  // accessors -------------------------------------------------------
-
-  // string host = 1;
-  void clear_host();
-  static const int kHostFieldNumber = 1;
-  const ::std::string& host() const;
-  void set_host(const ::std::string& value);
-  #if LANG_CXX11
-  void set_host(::std::string&& value);
-  #endif
-  void set_host(const char* value);
-  void set_host(const char* value, size_t size);
-  ::std::string* mutable_host();
-  ::std::string* release_host();
-  void set_allocated_host(::std::string* host);
-
-  // string db = 3;
-  void clear_db();
-  static const int kDbFieldNumber = 3;
-  const ::std::string& db() const;
-  void set_db(const ::std::string& value);
-  #if LANG_CXX11
-  void set_db(::std::string&& value);
-  #endif
-  void set_db(const char* value);
-  void set_db(const char* value, size_t size);
-  ::std::string* mutable_db();
-  ::std::string* release_db();
-  void set_allocated_db(::std::string* db);
-
-  // string usr = 4;
-  void clear_usr();
-  static const int kUsrFieldNumber = 4;
-  const ::std::string& usr() const;
-  void set_usr(const ::std::string& value);
-  #if LANG_CXX11
-  void set_usr(::std::string&& value);
-  #endif
-  void set_usr(const char* value);
-  void set_usr(const char* value, size_t size);
-  ::std::string* mutable_usr();
-  ::std::string* release_usr();
-  void set_allocated_usr(::std::string* usr);
-
-  // string password = 5;
-  void clear_password();
-  static const int kPasswordFieldNumber = 5;
-  const ::std::string& password() const;
-  void set_password(const ::std::string& value);
-  #if LANG_CXX11
-  void set_password(::std::string&& value);
-  #endif
-  void set_password(const char* value);
-  void set_password(const char* value, size_t size);
-  ::std::string* mutable_password();
-  ::std::string* release_password();
-  void set_allocated_password(::std::string* password);
-
-  // uint32 port = 2;
-  void clear_port();
-  static const int kPortFieldNumber = 2;
-  ::google::protobuf::uint32 port() const;
-  void set_port(::google::protobuf::uint32 value);
-
-  // uint32 poolSize = 6;
-  void clear_poolsize();
-  static const int kPoolSizeFieldNumber = 6;
-  ::google::protobuf::uint32 poolsize() const;
-  void set_poolsize(::google::protobuf::uint32 value);
-
-  // @@protoc_insertion_point(class_scope:XmsgChannelStatusCfgMysql)
- private:
-
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::internal::ArenaStringPtr host_;
-  ::google::protobuf::internal::ArenaStringPtr db_;
-  ::google::protobuf::internal::ArenaStringPtr usr_;
-  ::google::protobuf::internal::ArenaStringPtr password_;
-  ::google::protobuf::uint32 port_;
-  ::google::protobuf::uint32 poolsize_;
-  mutable int _cached_size_;
-  friend struct ::protobuf_cfg_2dx_2dmsg_2dchannel_2dstatus_2eproto::TableStruct;
-  friend void ::protobuf_cfg_2dx_2dmsg_2dchannel_2dstatus_2eproto::InitDefaultsXmsgChannelStatusCfgMysqlImpl();
 };
 // -------------------------------------------------------------------
 
@@ -662,7 +297,7 @@ class XmsgChannelStatusCfgLog : public ::google::protobuf::Message /* @@protoc_i
                &_XmsgChannelStatusCfgLog_default_instance_);
   }
   static PROTOBUF_CONSTEXPR int const kIndexInFileMessages =
-    4;
+    1;
 
   void Swap(XmsgChannelStatusCfgLog* other);
   friend void swap(XmsgChannelStatusCfgLog& a, XmsgChannelStatusCfgLog& b) {
@@ -784,7 +419,7 @@ class XmsgChannelStatusCfgXscTcpServer : public ::google::protobuf::Message /* @
                &_XmsgChannelStatusCfgXscTcpServer_default_instance_);
   }
   static PROTOBUF_CONSTEXPR int const kIndexInFileMessages =
-    5;
+    2;
 
   void Swap(XmsgChannelStatusCfgXscTcpServer* other);
   friend void swap(XmsgChannelStatusCfgXscTcpServer& a, XmsgChannelStatusCfgXscTcpServer& b) {
@@ -982,7 +617,7 @@ class XmsgChannelStatusCfgXmsgNeH2nAddr : public ::google::protobuf::Message /* 
                &_XmsgChannelStatusCfgXmsgNeH2nAddr_default_instance_);
   }
   static PROTOBUF_CONSTEXPR int const kIndexInFileMessages =
-    6;
+    3;
 
   void Swap(XmsgChannelStatusCfgXmsgNeH2nAddr* other);
   friend void swap(XmsgChannelStatusCfgXmsgNeH2nAddr& a, XmsgChannelStatusCfgXmsgNeH2nAddr& b) {
@@ -1141,7 +776,7 @@ class XmsgChannelStatusCfgXmsgNeN2hAddr : public ::google::protobuf::Message /* 
                &_XmsgChannelStatusCfgXmsgNeN2hAddr_default_instance_);
   }
   static PROTOBUF_CONSTEXPR int const kIndexInFileMessages =
-    7;
+    4;
 
   void Swap(XmsgChannelStatusCfgXmsgNeN2hAddr* other);
   friend void swap(XmsgChannelStatusCfgXmsgNeN2hAddr& a, XmsgChannelStatusCfgXmsgNeN2hAddr& b) {
@@ -1293,7 +928,7 @@ class XmsgChannelStatusCfgMisc : public ::google::protobuf::Message /* @@protoc_
                &_XmsgChannelStatusCfgMisc_default_instance_);
   }
   static PROTOBUF_CONSTEXPR int const kIndexInFileMessages =
-    8;
+    5;
 
   void Swap(XmsgChannelStatusCfgMisc* other);
   friend void swap(XmsgChannelStatusCfgMisc& a, XmsgChannelStatusCfgMisc& b) {
@@ -1387,8 +1022,6 @@ class XmsgChannelStatusCfgMisc : public ::google::protobuf::Message /* @@protoc_
   #pragma GCC diagnostic push
   #pragma GCC diagnostic ignored "-Wstrict-aliasing"
 #endif  // __GNUC__
-// -------------------------------------------------------------------
-
 // XmsgChannelStatusCfgPb
 
 // string cgt = 1;
@@ -1495,106 +1128,6 @@ inline void XmsgChannelStatusCfgPb::set_allocated_cfgtype(::std::string* cfgtype
   }
   cfgtype_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), cfgtype);
   // @@protoc_insertion_point(field_set_allocated:XmsgChannelStatusCfgPb.cfgType)
-}
-
-// .XmsgChannelStatusCfgMongodb mongodb = 3;
-inline bool XmsgChannelStatusCfgPb::has_mongodb() const {
-  return this != internal_default_instance() && mongodb_ != NULL;
-}
-inline void XmsgChannelStatusCfgPb::clear_mongodb() {
-  if (GetArenaNoVirtual() == NULL && mongodb_ != NULL) {
-    delete mongodb_;
-  }
-  mongodb_ = NULL;
-}
-inline const ::XmsgChannelStatusCfgMongodb& XmsgChannelStatusCfgPb::mongodb() const {
-  const ::XmsgChannelStatusCfgMongodb* p = mongodb_;
-  // @@protoc_insertion_point(field_get:XmsgChannelStatusCfgPb.mongodb)
-  return p != NULL ? *p : *reinterpret_cast<const ::XmsgChannelStatusCfgMongodb*>(
-      &::_XmsgChannelStatusCfgMongodb_default_instance_);
-}
-inline ::XmsgChannelStatusCfgMongodb* XmsgChannelStatusCfgPb::release_mongodb() {
-  // @@protoc_insertion_point(field_release:XmsgChannelStatusCfgPb.mongodb)
-  
-  ::XmsgChannelStatusCfgMongodb* temp = mongodb_;
-  mongodb_ = NULL;
-  return temp;
-}
-inline ::XmsgChannelStatusCfgMongodb* XmsgChannelStatusCfgPb::mutable_mongodb() {
-  
-  if (mongodb_ == NULL) {
-    mongodb_ = new ::XmsgChannelStatusCfgMongodb;
-  }
-  // @@protoc_insertion_point(field_mutable:XmsgChannelStatusCfgPb.mongodb)
-  return mongodb_;
-}
-inline void XmsgChannelStatusCfgPb::set_allocated_mongodb(::XmsgChannelStatusCfgMongodb* mongodb) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
-  if (message_arena == NULL) {
-    delete mongodb_;
-  }
-  if (mongodb) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
-    if (message_arena != submessage_arena) {
-      mongodb = ::google::protobuf::internal::GetOwnedMessage(
-          message_arena, mongodb, submessage_arena);
-    }
-    
-  } else {
-    
-  }
-  mongodb_ = mongodb;
-  // @@protoc_insertion_point(field_set_allocated:XmsgChannelStatusCfgPb.mongodb)
-}
-
-// .XmsgChannelStatusCfgMysql mysql = 4;
-inline bool XmsgChannelStatusCfgPb::has_mysql() const {
-  return this != internal_default_instance() && mysql_ != NULL;
-}
-inline void XmsgChannelStatusCfgPb::clear_mysql() {
-  if (GetArenaNoVirtual() == NULL && mysql_ != NULL) {
-    delete mysql_;
-  }
-  mysql_ = NULL;
-}
-inline const ::XmsgChannelStatusCfgMysql& XmsgChannelStatusCfgPb::mysql() const {
-  const ::XmsgChannelStatusCfgMysql* p = mysql_;
-  // @@protoc_insertion_point(field_get:XmsgChannelStatusCfgPb.mysql)
-  return p != NULL ? *p : *reinterpret_cast<const ::XmsgChannelStatusCfgMysql*>(
-      &::_XmsgChannelStatusCfgMysql_default_instance_);
-}
-inline ::XmsgChannelStatusCfgMysql* XmsgChannelStatusCfgPb::release_mysql() {
-  // @@protoc_insertion_point(field_release:XmsgChannelStatusCfgPb.mysql)
-  
-  ::XmsgChannelStatusCfgMysql* temp = mysql_;
-  mysql_ = NULL;
-  return temp;
-}
-inline ::XmsgChannelStatusCfgMysql* XmsgChannelStatusCfgPb::mutable_mysql() {
-  
-  if (mysql_ == NULL) {
-    mysql_ = new ::XmsgChannelStatusCfgMysql;
-  }
-  // @@protoc_insertion_point(field_mutable:XmsgChannelStatusCfgPb.mysql)
-  return mysql_;
-}
-inline void XmsgChannelStatusCfgPb::set_allocated_mysql(::XmsgChannelStatusCfgMysql* mysql) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
-  if (message_arena == NULL) {
-    delete mysql_;
-  }
-  if (mysql) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
-    if (message_arena != submessage_arena) {
-      mysql = ::google::protobuf::internal::GetOwnedMessage(
-          message_arena, mysql, submessage_arena);
-    }
-    
-  } else {
-    
-  }
-  mysql_ = mysql;
-  // @@protoc_insertion_point(field_set_allocated:XmsgChannelStatusCfgPb.mysql)
 }
 
 // .XmsgChannelStatusCfgLog log = 5;
@@ -1805,353 +1338,6 @@ inline void XmsgChannelStatusCfgPb::set_allocated_misc(::XmsgChannelStatusCfgMis
   }
   misc_ = misc;
   // @@protoc_insertion_point(field_set_allocated:XmsgChannelStatusCfgPb.misc)
-}
-
-// map<string, string> kafkaProd = 12;
-inline int XmsgChannelStatusCfgPb::kafkaprod_size() const {
-  return kafkaprod_.size();
-}
-inline void XmsgChannelStatusCfgPb::clear_kafkaprod() {
-  kafkaprod_.Clear();
-}
-inline const ::google::protobuf::Map< ::std::string, ::std::string >&
-XmsgChannelStatusCfgPb::kafkaprod() const {
-  // @@protoc_insertion_point(field_map:XmsgChannelStatusCfgPb.kafkaProd)
-  return kafkaprod_.GetMap();
-}
-inline ::google::protobuf::Map< ::std::string, ::std::string >*
-XmsgChannelStatusCfgPb::mutable_kafkaprod() {
-  // @@protoc_insertion_point(field_mutable_map:XmsgChannelStatusCfgPb.kafkaProd)
-  return kafkaprod_.MutableMap();
-}
-
-// uint64 gts = 10;
-inline void XmsgChannelStatusCfgPb::clear_gts() {
-  gts_ = GOOGLE_ULONGLONG(0);
-}
-inline ::google::protobuf::uint64 XmsgChannelStatusCfgPb::gts() const {
-  // @@protoc_insertion_point(field_get:XmsgChannelStatusCfgPb.gts)
-  return gts_;
-}
-inline void XmsgChannelStatusCfgPb::set_gts(::google::protobuf::uint64 value) {
-  
-  gts_ = value;
-  // @@protoc_insertion_point(field_set:XmsgChannelStatusCfgPb.gts)
-}
-
-// uint64 uts = 11;
-inline void XmsgChannelStatusCfgPb::clear_uts() {
-  uts_ = GOOGLE_ULONGLONG(0);
-}
-inline ::google::protobuf::uint64 XmsgChannelStatusCfgPb::uts() const {
-  // @@protoc_insertion_point(field_get:XmsgChannelStatusCfgPb.uts)
-  return uts_;
-}
-inline void XmsgChannelStatusCfgPb::set_uts(::google::protobuf::uint64 value) {
-  
-  uts_ = value;
-  // @@protoc_insertion_point(field_set:XmsgChannelStatusCfgPb.uts)
-}
-
-// -------------------------------------------------------------------
-
-// XmsgChannelStatusCfgMongodb
-
-// string uri = 1;
-inline void XmsgChannelStatusCfgMongodb::clear_uri() {
-  uri_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-inline const ::std::string& XmsgChannelStatusCfgMongodb::uri() const {
-  // @@protoc_insertion_point(field_get:XmsgChannelStatusCfgMongodb.uri)
-  return uri_.GetNoArena();
-}
-inline void XmsgChannelStatusCfgMongodb::set_uri(const ::std::string& value) {
-  
-  uri_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:XmsgChannelStatusCfgMongodb.uri)
-}
-#if LANG_CXX11
-inline void XmsgChannelStatusCfgMongodb::set_uri(::std::string&& value) {
-  
-  uri_.SetNoArena(
-    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:XmsgChannelStatusCfgMongodb.uri)
-}
-#endif
-inline void XmsgChannelStatusCfgMongodb::set_uri(const char* value) {
-  GOOGLE_DCHECK(value != NULL);
-  
-  uri_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:XmsgChannelStatusCfgMongodb.uri)
-}
-inline void XmsgChannelStatusCfgMongodb::set_uri(const char* value, size_t size) {
-  
-  uri_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
-      ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:XmsgChannelStatusCfgMongodb.uri)
-}
-inline ::std::string* XmsgChannelStatusCfgMongodb::mutable_uri() {
-  
-  // @@protoc_insertion_point(field_mutable:XmsgChannelStatusCfgMongodb.uri)
-  return uri_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-inline ::std::string* XmsgChannelStatusCfgMongodb::release_uri() {
-  // @@protoc_insertion_point(field_release:XmsgChannelStatusCfgMongodb.uri)
-  
-  return uri_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-inline void XmsgChannelStatusCfgMongodb::set_allocated_uri(::std::string* uri) {
-  if (uri != NULL) {
-    
-  } else {
-    
-  }
-  uri_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), uri);
-  // @@protoc_insertion_point(field_set_allocated:XmsgChannelStatusCfgMongodb.uri)
-}
-
-// -------------------------------------------------------------------
-
-// XmsgChannelStatusCfgMysql
-
-// string host = 1;
-inline void XmsgChannelStatusCfgMysql::clear_host() {
-  host_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-inline const ::std::string& XmsgChannelStatusCfgMysql::host() const {
-  // @@protoc_insertion_point(field_get:XmsgChannelStatusCfgMysql.host)
-  return host_.GetNoArena();
-}
-inline void XmsgChannelStatusCfgMysql::set_host(const ::std::string& value) {
-  
-  host_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:XmsgChannelStatusCfgMysql.host)
-}
-#if LANG_CXX11
-inline void XmsgChannelStatusCfgMysql::set_host(::std::string&& value) {
-  
-  host_.SetNoArena(
-    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:XmsgChannelStatusCfgMysql.host)
-}
-#endif
-inline void XmsgChannelStatusCfgMysql::set_host(const char* value) {
-  GOOGLE_DCHECK(value != NULL);
-  
-  host_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:XmsgChannelStatusCfgMysql.host)
-}
-inline void XmsgChannelStatusCfgMysql::set_host(const char* value, size_t size) {
-  
-  host_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
-      ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:XmsgChannelStatusCfgMysql.host)
-}
-inline ::std::string* XmsgChannelStatusCfgMysql::mutable_host() {
-  
-  // @@protoc_insertion_point(field_mutable:XmsgChannelStatusCfgMysql.host)
-  return host_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-inline ::std::string* XmsgChannelStatusCfgMysql::release_host() {
-  // @@protoc_insertion_point(field_release:XmsgChannelStatusCfgMysql.host)
-  
-  return host_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-inline void XmsgChannelStatusCfgMysql::set_allocated_host(::std::string* host) {
-  if (host != NULL) {
-    
-  } else {
-    
-  }
-  host_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), host);
-  // @@protoc_insertion_point(field_set_allocated:XmsgChannelStatusCfgMysql.host)
-}
-
-// uint32 port = 2;
-inline void XmsgChannelStatusCfgMysql::clear_port() {
-  port_ = 0u;
-}
-inline ::google::protobuf::uint32 XmsgChannelStatusCfgMysql::port() const {
-  // @@protoc_insertion_point(field_get:XmsgChannelStatusCfgMysql.port)
-  return port_;
-}
-inline void XmsgChannelStatusCfgMysql::set_port(::google::protobuf::uint32 value) {
-  
-  port_ = value;
-  // @@protoc_insertion_point(field_set:XmsgChannelStatusCfgMysql.port)
-}
-
-// string db = 3;
-inline void XmsgChannelStatusCfgMysql::clear_db() {
-  db_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-inline const ::std::string& XmsgChannelStatusCfgMysql::db() const {
-  // @@protoc_insertion_point(field_get:XmsgChannelStatusCfgMysql.db)
-  return db_.GetNoArena();
-}
-inline void XmsgChannelStatusCfgMysql::set_db(const ::std::string& value) {
-  
-  db_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:XmsgChannelStatusCfgMysql.db)
-}
-#if LANG_CXX11
-inline void XmsgChannelStatusCfgMysql::set_db(::std::string&& value) {
-  
-  db_.SetNoArena(
-    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:XmsgChannelStatusCfgMysql.db)
-}
-#endif
-inline void XmsgChannelStatusCfgMysql::set_db(const char* value) {
-  GOOGLE_DCHECK(value != NULL);
-  
-  db_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:XmsgChannelStatusCfgMysql.db)
-}
-inline void XmsgChannelStatusCfgMysql::set_db(const char* value, size_t size) {
-  
-  db_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
-      ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:XmsgChannelStatusCfgMysql.db)
-}
-inline ::std::string* XmsgChannelStatusCfgMysql::mutable_db() {
-  
-  // @@protoc_insertion_point(field_mutable:XmsgChannelStatusCfgMysql.db)
-  return db_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-inline ::std::string* XmsgChannelStatusCfgMysql::release_db() {
-  // @@protoc_insertion_point(field_release:XmsgChannelStatusCfgMysql.db)
-  
-  return db_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-inline void XmsgChannelStatusCfgMysql::set_allocated_db(::std::string* db) {
-  if (db != NULL) {
-    
-  } else {
-    
-  }
-  db_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), db);
-  // @@protoc_insertion_point(field_set_allocated:XmsgChannelStatusCfgMysql.db)
-}
-
-// string usr = 4;
-inline void XmsgChannelStatusCfgMysql::clear_usr() {
-  usr_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-inline const ::std::string& XmsgChannelStatusCfgMysql::usr() const {
-  // @@protoc_insertion_point(field_get:XmsgChannelStatusCfgMysql.usr)
-  return usr_.GetNoArena();
-}
-inline void XmsgChannelStatusCfgMysql::set_usr(const ::std::string& value) {
-  
-  usr_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:XmsgChannelStatusCfgMysql.usr)
-}
-#if LANG_CXX11
-inline void XmsgChannelStatusCfgMysql::set_usr(::std::string&& value) {
-  
-  usr_.SetNoArena(
-    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:XmsgChannelStatusCfgMysql.usr)
-}
-#endif
-inline void XmsgChannelStatusCfgMysql::set_usr(const char* value) {
-  GOOGLE_DCHECK(value != NULL);
-  
-  usr_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:XmsgChannelStatusCfgMysql.usr)
-}
-inline void XmsgChannelStatusCfgMysql::set_usr(const char* value, size_t size) {
-  
-  usr_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
-      ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:XmsgChannelStatusCfgMysql.usr)
-}
-inline ::std::string* XmsgChannelStatusCfgMysql::mutable_usr() {
-  
-  // @@protoc_insertion_point(field_mutable:XmsgChannelStatusCfgMysql.usr)
-  return usr_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-inline ::std::string* XmsgChannelStatusCfgMysql::release_usr() {
-  // @@protoc_insertion_point(field_release:XmsgChannelStatusCfgMysql.usr)
-  
-  return usr_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-inline void XmsgChannelStatusCfgMysql::set_allocated_usr(::std::string* usr) {
-  if (usr != NULL) {
-    
-  } else {
-    
-  }
-  usr_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), usr);
-  // @@protoc_insertion_point(field_set_allocated:XmsgChannelStatusCfgMysql.usr)
-}
-
-// string password = 5;
-inline void XmsgChannelStatusCfgMysql::clear_password() {
-  password_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-inline const ::std::string& XmsgChannelStatusCfgMysql::password() const {
-  // @@protoc_insertion_point(field_get:XmsgChannelStatusCfgMysql.password)
-  return password_.GetNoArena();
-}
-inline void XmsgChannelStatusCfgMysql::set_password(const ::std::string& value) {
-  
-  password_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:XmsgChannelStatusCfgMysql.password)
-}
-#if LANG_CXX11
-inline void XmsgChannelStatusCfgMysql::set_password(::std::string&& value) {
-  
-  password_.SetNoArena(
-    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:XmsgChannelStatusCfgMysql.password)
-}
-#endif
-inline void XmsgChannelStatusCfgMysql::set_password(const char* value) {
-  GOOGLE_DCHECK(value != NULL);
-  
-  password_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:XmsgChannelStatusCfgMysql.password)
-}
-inline void XmsgChannelStatusCfgMysql::set_password(const char* value, size_t size) {
-  
-  password_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
-      ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:XmsgChannelStatusCfgMysql.password)
-}
-inline ::std::string* XmsgChannelStatusCfgMysql::mutable_password() {
-  
-  // @@protoc_insertion_point(field_mutable:XmsgChannelStatusCfgMysql.password)
-  return password_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-inline ::std::string* XmsgChannelStatusCfgMysql::release_password() {
-  // @@protoc_insertion_point(field_release:XmsgChannelStatusCfgMysql.password)
-  
-  return password_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-inline void XmsgChannelStatusCfgMysql::set_allocated_password(::std::string* password) {
-  if (password != NULL) {
-    
-  } else {
-    
-  }
-  password_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), password);
-  // @@protoc_insertion_point(field_set_allocated:XmsgChannelStatusCfgMysql.password)
-}
-
-// uint32 poolSize = 6;
-inline void XmsgChannelStatusCfgMysql::clear_poolsize() {
-  poolsize_ = 0u;
-}
-inline ::google::protobuf::uint32 XmsgChannelStatusCfgMysql::poolsize() const {
-  // @@protoc_insertion_point(field_get:XmsgChannelStatusCfgMysql.poolSize)
-  return poolsize_;
-}
-inline void XmsgChannelStatusCfgMysql::set_poolsize(::google::protobuf::uint32 value) {
-  
-  poolsize_ = value;
-  // @@protoc_insertion_point(field_set:XmsgChannelStatusCfgMysql.poolSize)
 }
 
 // -------------------------------------------------------------------
@@ -3062,12 +2248,6 @@ inline void XmsgChannelStatusCfgMisc::set_allocated_ghlr(::std::string* ghlr) {
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
-// -------------------------------------------------------------------
-
-// -------------------------------------------------------------------
-
-// -------------------------------------------------------------------
-
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------

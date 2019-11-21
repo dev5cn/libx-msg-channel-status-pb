@@ -22,31 +22,11 @@ message XmsgChannelStatusCfgPb
 {
     string cgt = 1; 
     string cfgType = 2; 
-    XmsgChannelStatusCfgMongodb mongodb = 3; 
-    XmsgChannelStatusCfgMysql mysql = 4; 
     XmsgChannelStatusCfgLog log = 5; 
     XmsgChannelStatusCfgXscTcpServer xscTcpCfg = 6; 
     repeated XmsgChannelStatusCfgXmsgNeH2nAddr h2n = 7; 
     repeated XmsgChannelStatusCfgXmsgNeN2hAddr n2h = 8; 
     XmsgChannelStatusCfgMisc misc = 9; 
-    map<string, string> kafkaProd = 12; 
-    uint64 gts = 10; 
-    uint64 uts = 11; 
-}
-
-message XmsgChannelStatusCfgMongodb
-{
-    string uri = 1; 
-}
-
-message XmsgChannelStatusCfgMysql
-{
-    string host = 1;
-    uint32 port = 2;
-    string db = 3;
-    string usr = 4;
-    string password = 5;
-    uint32 poolSize = 6;
 }
 
 message XmsgChannelStatusCfgLog
